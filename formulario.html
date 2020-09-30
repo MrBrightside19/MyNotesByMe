@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/apps.css">
+    <title>Formularios</title>
+
+
+</head>
+<body>
+    <h3>Sintaxis</h3>
+    <label for=""></label>
+    <p>label = etiqueta</p>
+    <p>input = Ingreso de datos</p>
+    <p>El "id" del input y el "for" de label deben ser iguales</p>
+    <p>El "type" que existe son: text,number,email,password, date, radio, checkbox y textarea(comentarios), submit, reset</p>
+    <p>el "select" es para el combobox y los datos son "option"</p>
+
+    <hr>
+    <form action="">
+
+        <div>
+            <label for="nombre"> Nombre</label><br>
+            <input type="text" id="nombre" required> 
+
+        </div>
+
+        <div>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" required>
+
+        </div>
+        <div>
+            <label for="edad">Edad</label><br>
+            <input type="number" min="0" id="edad" required>
+
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="javier.silvag@usm.cl" required>
+
+        </div>
+
+        <div>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" id="contraseña" required>
+
+        </div>
+        <div>
+            <label for="fecha-nac">Fecha Naciemiento</label><br>
+            <input type="date" min ="2020-09-01" id="fecha-nac" required>
+
+        </div>
+        <div>
+            <label for="carrera">Carrera</label><br>
+            <select  id="carrera" required>
+                <option value="">Selecione</option>
+                <option value="">T.U en Informática</option>
+                <option value="">Licenciatura en Astrofisica</option>
+                <option value="">Vedeto</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label >Jornada</label> <br>
+            <input type="radio" name="jornada" id= "diurna"checked><label for="diurna">Diurna</label>
+            <input type="radio" name="jornada" id="vespertina"><label for="vespertina">Vespertina</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id= "gratuidad" required><label for="gratuidad">Tiene gratuidad</label>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </div>
+
+    </form>
+
+
+
+    
+    <hr>
+    <div class="flex-content">
+        
+        <a href="listas.html"><h3>Listas</h3></a>
+        <a href="tablas.html"><h3>Tablas</h3></a>
+        <a href="imagenes.html" ><h3>Imágenes e Íconos</h3></a>
+        <h3 id="selcitem"><u>Formulario</u></h3>
+        <a href="cajas.html"><h3>Cajas</h3></a>
+        <a href="flexbox.html"><h3>Flexbox</h3></a>
+        <a href="bootstrap.html"><h3>Bootstrap</h3></a>
+        <a href="lorem.html"><h3>Lorem Ipsum</h3></a>
+        <a href="sites.html"><h3>Sitios de Interés</h3></a>
+        <a href="index.html"><h3>Inicio</h3></a>
+    </div>
+</body>
+</html>

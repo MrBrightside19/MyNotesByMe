@@ -1,0 +1,62 @@
+
+.box{
+    width: 150px;
+    height: 150px;
+
+    border:1px solid blue;
+
+    display: flex; /*Ahro box es un flex*/
+    align-items: center; /*Se centra en y*/
+    justify-content: center; /*Se centra en x*/
+
+}
+
+.flex-container1{
+    margin-bottom:20px;
+    display: flex;
+    border:1px solid yellow;
+
+    flex-direction: column;/* colocar hacia abajo en columnas */
+    flex-direction: row;/* colocar hacia el lado en filas */
+    flex-wrap: wrap; /* los elementos respetan su ancho y se ajustan en la fila */
+    flex-wrap: nowrap;/* los elementos se ajustan y pasan para abajo si no caben mas */
+}
+.flex-container2{
+    margin-bottom:20px;
+    display: flex;
+    border:1px solid white;
+
+    flex-direction: column;/* colocar hacia abajo en columnas */
+    flex-direction: row;/* colocar hacia el lado en filas */
+    flex-wrap: wrap; /* los elementos respetan su ancho y se ajustan en la fila */
+    justify-content: right;/* eje principal a la derecha*/
+    justify-content: space-around;
+    justify-content: space-between; /*espacio pareje entremedio*/
+    justify-content: space-evenly; /*Espacio parejo izquierda y derecha del elemento*/
+    
+    align-items: stretch; /*Elementos estirados*/
+    align-items: center; /*Centrado*/
+    
+    flex-wrap: nowrap;/* los elementos se ajustan y pasan para abajo si no caben mas */
+
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.box1{
+    border: 1px solid black;
+    background-color: blueviolet;
+    width: 230px;
+
+
+}
+
+
+.flex-container1-p2{
+
+    display: flex;
+    border: 2px solid green;
+    height: 200px;
+    margin-bottom: 10px;
+
+}

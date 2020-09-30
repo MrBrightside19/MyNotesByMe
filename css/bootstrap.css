@@ -1,0 +1,9 @@
+.flex-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0;
+    width:100%;
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/apps.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h3>Sintaxis</h3>
+    <p>div>div.box*3 = 1 div con 3 divs con clase box</p>
+
+    <div class=flex-container1>
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+        <div class="box">G</div>
+        <div class="box">H</div>
+        <div class="box">I</div>
+        <div class="box">J</div>
+        <div class="box">K</div>
+        <div class="box">L</div>
+        <div class="box">M</div>
+        <div class="box">N</div>
+        <div class="box">O</div>
+    </div>
+
+    <div class=flex-container2>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+
+
+    </div>
+    <hr>
+
+    <h1>Flexbox Parte 2: La Venganza</h1>
+
+    <div class="flex-container1-p2">
+        <div class="box1">8</div>
+        <div class="box1"style="order:1">9</div><!-- por defecto el order es 0, asi se juega con el orden que tomara -->
+        <div class="box1">10</div>
+        <div class="box1" style="order:-1">11</div>
+        <div class="box1">12</div>
+    </div>
+
+    <div class="flex-container1-p2">
+        <div class="box1" style="flex-grow:1">8*</div>
+        <div class="box1" style="flex-grow:2">9*</div> <!-- crece el doble mas que los otros -->
+        <div class="box1" style="flex-grow:1">10*</div>
+    </div>
+
+    <div class="flex-container1-p2">
+        <div class="box1" style="flex-shrink:1">8+</div>
+        <div class="box1" style="flex-shrink:1">9+</div> 
+        <div class="box1" style="flex-shrink:1">10+</div>
+        <div class="box1" style="flex-shrink:2">11+</div><!-- se encoge el doble mas que los otros -->
+        <div class="box1" style="flex-shrink:1">12+</div> 
+
+    </div>
+
+
+    
+    <hr>
+    <div class="flex-content">
+        <a href="listas.html"><h3>Listas</h3></a>
+        <a href="tablas.html"><h3>Tablas</h3></a>
+        <a href="imagenes.html" ><h3>Imágenes e Íconos</h3></a>
+        <a href="formulario.html"><h3>Formularios</h3></a>
+        <a href="cajas.html"><h3>Cajas</h3></a>
+        <h3 id="selcitem"><u>Flexbox</u></h3>
+        <a href="bootstrap.html"><h3>Bootstrap</h3></a>
+        <a href="lorem.html"><h3>Lorem Ipsum</h3></a>
+        <a href="sites.html"><h3>Sitios de Interés</h3></a>
+        <a href="index.html"><h3>Inicio</h3></a>
+    </div>
+</body>
+</html>

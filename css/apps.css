@@ -1,0 +1,75 @@
+/* Color y ajuste de las tablas  */
+table{
+    border-collapse: collapse;
+    border:1px solid black;
+    text-align: center;
+    background-color: blue ;
+}
+
+th{border:1px solid black;}
+
+td{
+    padding:10px;
+    border:1px solid black;
+}
+
+/* Color de la pagina y letras*/ 
+body, a{
+    background-color: brown;
+    color: beige;
+}
+
+#selcitem{color:blue;}
+
+/* Separar hipervinculos */
+a{padding-left: 25px;}
+
+/* Seleccion de elemento (Cambio de color) */
+a:hover{color: blue;}
+
+
+/* tr{padding-left: 560px;} */
+
+/* Ajuste de texto (tamaño y fuente) */
+.adjust-text{font: 300% sans-serif;}
+
+/* Flex de menu */
+.flex-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0;
+    width:100%;
+}
+/* Foto Alten */
+#alten{padding-top: 30px;}
+
+/* ---------------------------------- */
+/* CAJAS */
+
+#cajas{/*Este es un identificador*/
+    font:"Courier New", Courier, monospace;
+    border:1px solid white;
+    padding:15px;
+    width: 650px;
+    height: 245px;
+
+    margin-top: 30px;
+    /* margin-bottom(abajo), margin-top(arriba), margin-left(izquierda), margin-right(derecha) */
+    margin: 20px 10px 30px 50px; /* sentido horario */
+    margin: 50px 20px; /*Margen simétrico, 10 arriba y abajo 20 a los lados*/
+    margin: 10px; /*Margen para todos*/
+    /*Se sobreescribe las sentencias 'margin' anteriores,no se suman*/
+}
+
+.cajas2{ /*Esta es una clase*/
+    width: 100px;
+    height:100px;
+    border: 1px solid blue; 
+    float:left;/*que los elementos floten, es decir que suban*/
+
+    margin:10px;
+    background-color:crimson;
+}
+
