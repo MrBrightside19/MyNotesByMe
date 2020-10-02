@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/apps.css">
+    <title>Tablas</title>
+
 </head>
 <body>
     <h1>Tablas</h1>
@@ -18,7 +20,6 @@
     <hr>
     <h3>Tabla Normal</h3>
 
-  
     <p>Tabla regular donde se ajusta la columna 'colspan="3"' y el diseño con CSS</p>
 
     <table>
@@ -74,6 +75,58 @@
             <td>2</td>
         </tr>
     </table>
+    <hr>
+
+    <h1>Tablas con Bootstrap</h1>
+    <h3>Sintaxis</h3>
+    <p>class="table" --> Le da la forma de un table desde el framework Bootstrap</p>
+    <p>class="table-bordered" --> se le agregan bordes a la tablas, con 'borderless se le quitan'</p>
+    <p>class="table-striped" --> Colores alternados en filas</p>
+    <p>class="table-hover" --> Cambia el color cuando el mouse flota sobre las filas </p>
+    <p>class="table-dark" --> Tabla con paleta de colores oscuras</p>
+    <p>class="table-primary" --> Destaca una fila o celda en particular. 
+        Puede ser ademas 'secondary', 'warning', 'danger', 'info', 'success', etc
+    </p>
+    <p>class="table-sm" --> Hace el table mas pequeño</p>
+
+    <div class="container" >
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered table-striped table-hover table-light table-sm" >
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Rut</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Carrera</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16484000-k</td>
+                            <td class="table-warning">Dayan</td>
+                            <td class="table-secondary">19</td>
+                            <td class="table-danger">Telecomunicaciones</td>
+                        </tr>
+                        <tr>
+                            <td>7312827-7</td>
+                            <td class="table-info">Italo</td>
+                            <td>20</td>
+                            <td class="table-success">Artes Visuales</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>9147750-5</td>
+                            <td>El Michi</td>
+                            <td>9</td>
+                            <td>Gato Callejero</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
 
     <hr>
     <!-- align está obsoleto; sacar y usar con CSS -->
@@ -85,10 +138,20 @@
         <a href="cajas.html"><h3>Cajas</h3></a>
         <a href="flexbox.html"><h3>Flexbox</h3></a>
         <a href="bootstrap.html"><h3>Bootstrap</h3></a>
-        <a href="carrusel.html"><h3>Carrusel</h3></a>
+        <a href="carousel.html"><h3>Carousel</h3></a>
         <a href="lorem.html"><h3>Lorem Ipsum</h3></a>
         <a href="sites.html"><h3>Sitios de Interés</h3></a>
         <a href="index.html"><h3>Inicio</h3></a>
     </div>
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>

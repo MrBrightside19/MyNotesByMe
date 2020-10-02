@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Carrusel</title>
+</head>
+<body style="background-color: brown;">
+
+    <h1>Carousel</h1>
+    <h3>Sintaxis</h3>
+    <p>'id' del "div carousel" debe coincidir con los href de los botones 'prev' y 'next'
+        y los 'data-target' de los "indicators"
+    </p>
+    <p>class="mt-5" --> 'margin-top de 5'</p>
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card mt-5">
+                    <div class="card-header">Ejemplo Carousel</div>
+                    <div class="card-body">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner" >
+                              <div class="carousel-item active">
+                                <img src="img/Carousel/01.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block" style="color:black;">
+                                  <h5>Bodoque con guitarra</h5>
+                                  <p>No te voy a mentir, se le ve fresco al pana.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/Carousel/02.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block" style="color:black;">
+                                  <h5>Grinch</h5>
+                                  <p>Gruño, gruño, gruño, y la navidad destruyo...</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/Carousel/03.jpeg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block"style="color:black;">
+                                  <h5>Chicas Super Poderosas</h5>
+                                  <p>¡Son ellas! Te lo juro por Dieguito Maradona.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/Carousel/04.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block"style="color:black;">
+                                  <h5>Bueno, no gané, aqui está su pizza</h5>
+                                  <p>Pero si ganamos.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/Carousel/05.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block"style="color:black;">
+                                  <h5>Perfecto, no habia pizza</h5>
+                                  <p>Asta la procsima</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+
+
+    <div class="flex-content">
+        <a href="listas.html"><h3>Listas</h3></a>
+        <a href="tablas.html"><h3>Tablas</h3></a>
+        <a href="imagenes.html" ><h3>Imágenes e Íconos</h3></a>
+        <a href="formulario.html"><h3>Formularios</h3></a>
+        <a href="cajas.html"><h3>Cajas</h3></a>
+        <a href="flexbox.html"><h3>Flexbox</h3></a>
+        <a href="bootstrap.html"><h3>Bootstrap</h3></a>
+        <h3 id="selcitem"><u>Carousel</u></h3>
+        <a href="lorem.html"><h3>Lorem Ipsum</h3></a>
+        <a href="sites.html"><h3>Sitios de Interés</h3></a>
+        <a href="index.html"><h3>Inicio</h3></a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

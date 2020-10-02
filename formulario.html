@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/apps.css">
     <title>Formularios</title>
 
@@ -10,13 +11,12 @@
 </head>
 <body>
     <h3>Sintaxis</h3>
-    <label for=""></label>
     <p>label = etiqueta</p>
     <p>input = Ingreso de datos</p>
     <p>El "id" del input y el "for" de label deben ser iguales</p>
     <p>El "type" que existe son: text,number,email,password, date, radio, checkbox y textarea(comentarios), submit, reset</p>
     <p>el "select" es para el combobox y los datos son "option"</p>
-
+    <p>El "name" es para asignar todo en un mismo grupo</p>
     <hr>
     <form action="">
 
@@ -85,6 +85,118 @@
         </div>
 
     </form>
+    <hr>
+
+    <h1>Formularios con Bootstrap</h1>
+    <h3>Sintaxis</h3>
+    <p>Los elementos de un formulario se agregan en un div</p>
+    <p>¡¡ID DEL INPUT DEBE COINCIDIR CON EL FOR DEL LABEL!!</p>
+    <p>class="form-group" --> Forma de Bootstrap para el grupo</p>
+    <p>class="form-control" -->  Forma de Bootstrap para el control, ¿se usa en el input?</p>
+    <p>class="form-text" --> Forma de Bootstrap para el texto</p>
+    <p>class="text-muted" --> ???</p>
+    <p>class="form-check" --> Forma de Bootstrap para el checkbox</p>
+    <p>class="form-check-input" --> Forma de Bootstrap para el check input</p>
+    <p>class="form-check-label" --> Forma de Bootstrap para el check label</p>
+    <p>class="foem-check-inline" --> Establecer checkbox de forma paralelea</p>
+    <p>class="form-row" --> Forma de Bootstrap para el row</p>
+    <p>class="btn" --> Forma de Bootstrap para botones</p>
+    <p>class="btn-primary" --> color de Bootstrap para botones, primary es azul</p>
+    <p>class="btn-warning" --> color de Bootstrap para botones, warning es amarillo</p>
+    <p>card = Contenedor con un borde</p>
+    <p>class="card-body" --> cuerpo del formulario?</p>
+    <p>class="card-header" --> Encabezado del formulario</p>
+
+
+    <div class="container " style="color: black;">
+        <div class="row">
+            <div class="col">
+                <h3>Formulario Bootstrap</h3>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <form action="">
+                    <div class="card">
+                        <div class="card-header">Formulario de Ejemplo</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="rut">Rut</label>
+                                <input type="text" name="" id="rut" class="form-control">
+                                <small class="form-text text-muted">Indique su rut sin puntos y con guión</small>
+                            
+                            </div>   
+                            
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" class="form-control">
+
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" id="apellido" class="form-control">
+
+                                </div>
+        
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="carrera">Carrera</label>
+                                <select name="" id="carrera" class="form-control">
+                                    <option value="">T.U en Informática</option>
+                                    <option value="">T.U en Telecomunicaciones</option>
+                                    <option value="">T.U en Gatos Callejeros</option>
+
+                                </select>
+                                
+                            </div>
+                        
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jornada" id="jdiurna" value="d">
+                                    <label class="form-check-label" for="jdiurna">Jornada Diurna</label>
+                                
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jornada" id="jvespertina" value="v">
+                                    <label class="form-check-label" for="jvespertina">Jornada Vespertina</label>
+            
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jornada" id="jejecutiva" value="e">
+                                    <label class="form-check-label" for="jejecutiva">Jornada Ejecutiva</label>
+            
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gratuidad">
+                                    <label class="form-check-label" for="gratuidad">Postula a la gratuidad</label>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-warning">Cancelar</button>
+                                <button class="btn btn-primary">Enviar Datos</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+        
+    </div>
 
 
 
@@ -99,10 +211,13 @@
         <a href="cajas.html"><h3>Cajas</h3></a>
         <a href="flexbox.html"><h3>Flexbox</h3></a>
         <a href="bootstrap.html"><h3>Bootstrap</h3></a>
-        <a href="carrusel.html"><h3>Carrusel</h3></a>
+        <a href="carousel.html"><h3>Carousel</h3></a>
         <a href="lorem.html"><h3>Lorem Ipsum</h3></a>
         <a href="sites.html"><h3>Sitios de Interés</h3></a>
         <a href="index.html"><h3>Inicio</h3></a>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
