@@ -31,7 +31,12 @@ a:hover{color: blue;}
 /* tr{padding-left: 560px;} */
 
 /* Ajuste de texto (tamaño y fuente) */
-.adjust-text{font: 300% sans-serif;}
+.adjust-text{
+    display:flex;
+    font: 300% sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Flex de menu */
 .flex-content{
